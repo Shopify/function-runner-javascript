@@ -1,6 +1,6 @@
 # `@shopify/function-runner`
 
-This is the npm package for `function-runner`. The package contains a small Node
+This is the npm package for [`function-runner`](https://github.com/Shopify/function-runner). The package contains a small Node
 script that downloads the appropriate `function-runner` binary on demand and
 invokes it with the parameters given.
 
