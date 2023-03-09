@@ -1,0 +1,20 @@
+{
+  "name": "@shopify/function-runner",
+  "version": "0.0.1",
+  "description": "Run Shopify Functions",
+  "main": "index.js",
+  "bin": {
+    "@shopify/function-runner": "./index.js"
+  },
+  "type": "module",
+  "author": "Surma <surma@shopify.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cachedir": "^2.3.0",
+    "node-fetch": "^3.2.10"
+  },
+  "publishConfig": {
+    "access": "public",
+    "@shopify:registry": "https://registry.npmjs.org/"
+  }
+}
