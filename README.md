@@ -34,3 +34,5 @@ BUILD_FR=1 npx @shopify/function-runner
 ```
 
 Please note that for this to work you must have Rust installed.
+
+Test
