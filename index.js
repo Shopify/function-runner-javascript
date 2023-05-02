@@ -59,6 +59,9 @@ async function downloadBinary(version) {
     const url = binaryUrl(version);
     console.log(`Downloading ${NAME} ${version} to ${targetPath}...`);
     const resp = await fetch(url);
+    if (!resp.ok) {
+      return reject(new Error(`Failed to download ${NAME} ${version} for ${platarch()}.`))
+    }
     resolve(resp.body);
   });
   const gunzip = gzip.createGunzip();
@@ -108,6 +111,7 @@ function binaryUrl(version) {
 
 const SUPPORTED_TARGETS = [
   "arm-macos",
+  "arm-linux",
   "x86_64-macos",
   "x86_64-windows",
   "x86_64-linux",
