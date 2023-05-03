@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    open-pull-requests-limit: 100
+    registries: "*"
+    reviewers:
+      - "@Shopify/functions-dependabot-reviewers"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    open-pull-requests-limit: 100
+    reviewers:
+      - "@Shopify/functions-dependabot-reviewers"
+    schedule:
+      interval: "weekly"
