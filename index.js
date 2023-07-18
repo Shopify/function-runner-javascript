@@ -55,7 +55,7 @@ async function isBinaryDownloaded(version) {
 
 async function downloadBinary(version) {
   const targetPath = binaryPath(version);
-  const compressedStream = await new Promise(async (resolve) => {
+  const compressedStream = await new Promise(async (resolve, reject) => {
     const url = binaryUrl(version);
     console.log(`Downloading ${NAME} ${version} to ${targetPath}...`);
     const resp = await fetch(url);
