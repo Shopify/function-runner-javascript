@@ -1,6 +1,6 @@
 {
   "name": "@shopify/function-runner",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Run Shopify Functions",
   "main": "index.js",
   "bin": {
