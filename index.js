@@ -10,7 +10,7 @@ import cachedir from "cachedir";
 
 const REPO = "Shopify/function-runner";
 const NAME = "function-runner";
-const VERSION = "v5.1.3";
+const VERSION = "v5.1.4";
 
 async function main() {
   if (!(await isBinaryDownloaded(VERSION))) {
